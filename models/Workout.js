@@ -16,6 +16,11 @@ const WorkoutSchema = new Schema({
       sets: {type: Number},
       distance: {type: Number}
     }]
+},
+{
+  toJSON: {
+    virtuals: true
+  }
 });
 
 WorkoutSchema.virtual("totalDuration").get(function() {

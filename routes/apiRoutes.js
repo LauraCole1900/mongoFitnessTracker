@@ -1,44 +1,59 @@
 const router = require("express").Router();
 const db = require("./models");
 
-app.get("/notes", (req, res) => {
-  db.Note.find({})
-    .then(dbNote => {
-      res.json(dbNote);
+// existing api routes
+// ("/api/workouts")
+// ("/api/workouts/" + id,
+// (`/api/workouts/range`)
+
+router.get("/api/workouts", (req, res) => {
+  db.Workout.find({})
+    .then(dbWorkout => {
+      res.json(dbWorkout);
     })
     .catch(err => {
       res.json(err);
     });
 });
 
-app.get("/user", (req, res) => {
-  db.User.find({})
-    .then(dbUser => {
-      res.json(dbUser);
+router.get("/api/workouts/range", (req, res) => {
+  db.Workout.find({}).limit(7)
+    .then(dbWorkout => {
+      res.json(dbWorkout);
     })
     .catch(err => {
       res.json(err);
     });
 });
 
-app.post("/submit", ({ body }, res) => {
-  db.Note.create(body)
-    .then(({ _id }) => db.User.findOneAndUpdate({}, { $push: { notes: _id } }, { new: true }))
-    .then(dbUser => {
-      res.json(dbUser);
+router.post("/api/workouts", ({ body }, res) => {
+  db.Workout.create(body)
+    .then(dbWorkout => {
+      res.json(dbWorkout);
     })
     .catch(err => {
       res.json(err);
     });
 });
 
-app.get("/populateduser", (req, res) => {
-  db.User.find({})
-  .populate("notes")
-  .then(dbUser => {
-    res.json(dbUser);
+router.put("/api/workouts/:id", (req, res) => {
+  db.Workout.findByIdAndUpdate(req.params.id, {$push: {exercises: req.body}}, {new: true, runValidators: true})
+  .then(dbWorkout => {
+    res.json(dbWorkout);
   })
   .catch (err => {
     res.json(err);
   });
 });
+
+router.delete("/api/workouts", (req, res) => {
+  db.Workout.findByIdAndDelete(req.body.id)
+  .then(() => {
+    res.json(true)
+  })
+  .catch (err => {
+    res.json(err);
+  });
+});
+
+module.exports = router;
