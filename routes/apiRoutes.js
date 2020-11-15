@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const db = require("./models");
+const db = require("../models");
 
 // existing api routes
 // ("/api/workouts")
