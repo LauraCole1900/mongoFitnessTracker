@@ -16,7 +16,7 @@
 
 ## Description
 
-Application description and instructions here
+This is a workout tracker application using Mongoose. The user can create a new workout by clicking on the "New Workout" button, or add to the existing workout by clicking on the "Continue Workout" button. They may add resistance or cardio exercises. The user can also click on "Fitness Tracker Dashboard" in the upper left corner to visit the Dashboard, which shows charts and graphs showing the cumulative effect of their saved workouts. A click on "Fitness Tracker" in the upper left corner will take the user back to the landing page.
 
 ## Links
 
@@ -25,16 +25,19 @@ Application description and instructions here
 ## Screenshots
 
 Landing page:
-![Landing page:](public/assets/#)
+![Landing page:](public/assets/fitness-tracker-landing-page.png)
 
-Notes page with previously-entered notes on the left:
-![Notes page, showing previous notes on the left](public/assets/#)
+New workout page:
+![New workout page](public/assets/fitness-tracker-new-workout.png)
 
-Notes page with previously-entered note selected:
-![Notes page with a previously-entered note selected](public/assets/#)
+Workout page with "resistance" exercises selected:
+![Workout page with "resistance" exercises selected](public/assets/fitness-tracker-resistance.png)
 
-Notes page with new note, showing "Save" icon in upper-right corner:
-![Notes page with a new note, showing "Save" icon](public/assets/#)
+Workout page with "cardio" exercises selected:
+![Workout page with "cardio" exercises selected](public/assets/fitness-tracker-cardio.png)
+
+Workout stats page:
+![Workout stats page](public/assets/fitness-tracker-stats-page.png)
 
 ## Installation Instructions
 
@@ -42,7 +45,7 @@ npm i
 
 ## Usage
 
-Application intended usage here
+This app is intended to be used to track workouts, exercises, and fitness information.
 
 ## Technologies Used
 
