@@ -17,7 +17,7 @@ const opts = {
   useFindAndModify: false
 }
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", opts);
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitnesstracker", opts);
 
 // routes
 app.use(require("./routes/apiRoutes.js"));
