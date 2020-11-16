@@ -16,7 +16,7 @@
 
 ## Description
 
-This is a workout tracker application using Mongoose. The user can create a new workout by clicking on the "New Workout" button, or add to the existing workout by clicking on the "Continue Workout" button. They may add resistance or cardio exercises. The user can also click on "Fitness Tracker Dashboard" in the upper left corner to visit the Dashboard, which shows charts and graphs showing the cumulative effect of their saved workouts. A click on "Fitness Tracker" in the upper left corner will take the user back to the landing page.
+This is a workout tracker application using Mongoose. The user can create a new workout by clicking on the "New Workout" button, or add to the existing workout by clicking on the "Continue Workout" button. They may add resistance or cardio exercises. The user can also click on "Dashboard" in the upper left corner to visit the Dashboard, which shows charts and graphs showing the cumulative effect of their saved workouts. A click on "Fitness Tracker" in the upper left corner will take the user back to the landing page.
 
 ## Links
 
