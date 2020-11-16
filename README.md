@@ -20,7 +20,7 @@ This is a workout tracker application using Mongoose. The user can create a new 
 
 ## Links
 
-[Deployed application on Heroku](https://#/)
+[Deployed application on Heroku](https://git.heroku.com/stormy-lowlands-24720.git)
 
 ## Screenshots
 
