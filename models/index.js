@@ -1,4 +1,4 @@
 // Compiles models for easier exporting
 module.exports = {
-  Workout: require("./Workout"),
+  Workout: require("./Workouts"),
 };
