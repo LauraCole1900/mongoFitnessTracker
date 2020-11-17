@@ -3,9 +3,11 @@ const Schema = mongoose.Schema;
 
 const WorkoutSchema = new Schema({
   day: {
+    // Assigns current date to posting workout
     type: Date,
     default: () => new Date()
   },
+  // Exercise information
   exercises: [
     {
       type: {type: String, required: "Exercise type is required"},
@@ -23,6 +25,7 @@ const WorkoutSchema = new Schema({
   }
 });
 
+// Totals workout durations for cumulative information
 WorkoutSchema.virtual("totalDuration").get(function() {
   return this.exercises.reduce(function(total, exercise) {
     return total + exercise.duration
