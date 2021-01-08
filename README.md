@@ -57,7 +57,7 @@ npm run test
 
 ## Credits
 
-Base code and front-end functionality developed and provided by Trinity Education Services
+Base code and front-end functionality developed and provided by Trilogy Education Services
 
 ## Contributing
 
