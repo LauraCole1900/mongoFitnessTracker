@@ -41,7 +41,42 @@ Workout stats page:
 
 ## Installation Instructions
 
-npm i
+If you want to run a copy of this app on your local machine, first clone the repository:
+
+HTTPS:
+```
+$ git clone https://github.com/LauraCole1900/expressNoteTaker.git
+```
+
+SSH:
+```
+$ git clone git@github.com:LauraCole1900/expressNoteTaker.git
+```
+
+Then cd into the cloned directory and download the dependencies by typing into the command line
+```
+$ npm install --save
+```
+
+You will also need to download MongoDB. For help, visit the MongoDB website here:
+```
+https://docs.mongodb.com/manual/installation/
+```
+
+Once installed, make sure MongoDB is running by entering into the command line
+```
+$ mongod
+```
+
+Once the dependencies and MongoDB are installed, start the application by typing into the command line
+```
+$ node server.js
+```
+
+Then go to the browser and enter into the address bar
+```
+$ localhost:3000
+```
 
 ## Usage
 
@@ -49,7 +84,7 @@ This app is intended to be used to track workouts, exercises, and fitness inform
 
 ## Technologies Used
 
-Node.js, Mongo, Mongoose
+Node.js, Mongo, Mongoose, Express
 
 ## Tests
 
@@ -57,11 +92,11 @@ npm run test
 
 ## Credits
 
-Base code and front-end functionality developed and provided by Trilogy Education Services
+Base code and front-end functionality developed and provided by 2U/Trilogy Education Services
 
 ## Contributing
 
-N/A
+We believe code is never finished, welcome your contributions to enhance the applications functionality. Please adhere to the Code of Conduct for the Contributor Covenant, version 2.0, at https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
 
 ## Questions
 
