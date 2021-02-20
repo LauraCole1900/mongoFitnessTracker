@@ -41,7 +41,17 @@ Workout stats page:
 
 ## Installation Instructions
 
-If you want to run a copy of this app on your local machine, first clone the repository:
+If you want to run a copy of this app on your local machine, first you will also need to download MongoDB. For help, visit the MongoDB website here:
+```
+https://docs.mongodb.com/manual/installation/
+```
+
+Once installed, make sure MongoDB is running by entering into the command line
+```
+$ mongod
+```
+
+Then, clone the repository:
 
 HTTPS:
 ```
@@ -58,17 +68,7 @@ Then cd/ into the cloned directory and download the dependencies by typing into 
 $ npm install --save
 ```
 
-You will also need to download MongoDB. For help, visit the MongoDB website here:
-```
-https://docs.mongodb.com/manual/installation/
-```
-
-Once installed, make sure MongoDB is running by entering into the command line
-```
-$ mongod
-```
-
-Once the dependencies and MongoDB are installed, start the application by typing into the command line
+Once MongoDB and the dependencies and MongoDB is running, start the application by typing into the command line
 ```
 $ node server.js
 ```
