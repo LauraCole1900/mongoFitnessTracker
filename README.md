@@ -55,12 +55,12 @@ Then, clone the repository:
 
 HTTPS:
 ```
-$ git clone https://github.com/LauraCole1900/expressNoteTaker.git
+$ git clone https://github.com/LauraCole1900/mongoFitnessTracker.git
 ```
 
 SSH:
 ```
-$ git clone git@github.com:LauraCole1900/expressNoteTaker.git
+$ git clone git@github.com:LauraCole1900/mongoFitnessTracker.git
 ```
 
 Then cd/ into the cloned directory and download the dependencies by typing into the command line
