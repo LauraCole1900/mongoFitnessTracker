@@ -53,7 +53,7 @@ SSH:
 $ git clone git@github.com:LauraCole1900/expressNoteTaker.git
 ```
 
-Then cd into the cloned directory and download the dependencies by typing into the command line
+Then cd/ into the cloned directory and download the dependencies by typing into the command line
 ```
 $ npm install --save
 ```
