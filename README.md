@@ -84,7 +84,7 @@ This app is intended to be used to track workouts, exercises, and fitness inform
 
 ## Technologies Used
 
-Node.js, Mongo, Mongoose, Express
+[![Node.js](https://img.shields.io/badge/built%20with-Node.js-3c873a)](https://nodejs.org/en/) [![MongoDB](https://img.shields.io/badge/built%20with-MongoDB-4db33d)](https://www.mongodb.com/) [![Mongoose](https://img.shields.io/badge/built%20with-Mongoose-cb3837)](https://www.npmjs.com/package/mongoose) [![Express.js](https://img.shields.io/badge/built%20with-Express.js-303030)](https://expressjs.com/)
 
 ## Tests
 
